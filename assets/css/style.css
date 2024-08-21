@@ -39,7 +39,7 @@
     width: 6rem;
 }
 
-/*section title*/
+/*section components*/
 
 .title-container{
     margin-top: 6rem;
@@ -88,7 +88,7 @@
     background-color: #FBFBFB;
     /* background-color:red; */
     width: 70%;
-    height: 70rem;
+    /* height: 70rem; */
     margin-top: 7rem;
 }
 
@@ -113,43 +113,66 @@
     margin-top: 3rem;
 }
 
-/* .list-arrow{
-    background-color: #A2D6F9;
-    height: 25rem;
-} */
 
-.list-arrow{
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    
-  }
-  .list-arrow div{
+
+/* 本体部分 */
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100vw; /* 画面の横幅に合わせる */
+    padding: 0;
+    margin: 0;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* 親要素の幅に合わせる */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-container {
     position: relative;
-    width:100%;
-    background-color: #A2D6F9;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-align:center;
-    color: #fff;
-    height: 30rem;
-  }
-  .list-arrow div:after{
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    background: #A2D6F9;
+    width: 100%; /* 親要素の幅に合わせる */
+    height: 20rem;
+    box-sizing: border-box; /* paddingを含めて幅を調整 */
+    text-align: center; /* 中央揃え */
+}
+
+/* 先端部分 (矢印) */
+.step-container::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
-    bottom: -10px;
-    left: 0;
-    border-style: solid;
-    border-color: #A2D6F9 transparent transparent transparent;
-    border-width: 10px 50px 0 50px;
-    z-index: 1;
-  }
-  .list-arrow.is-current{
-    background: #A2D6F9;
+    bottom: -90px; /* もう少し矢印がはみ出るように調整 */
+    left: 50%; /* 矢印の中央を揃える */
+    transform: translateX(-50%); /* 左に50%移動して中央に配置 */
+    border-left: 50vw solid transparent; /* 左右をビューポートの半分に設定 */
+    border-right: 50vw solid transparent;
+    border-top: 90px solid #A2D6F9; /* 高さを80pxに設定 */
+}
+
+
+/* About us section*/
+.list-container-subtitle{
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    color: #B5B4B4;
     font-weight: bold;
-  }
-  .list-arrow.is-current:after{
-    border-color: #A2D6F9 transparent transparent transparent;
-  }
+}
+
+.list-container-contents{
+    color: #858585;
+    font-size: 25px;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 10rem;
+    font-weight: bold;
+    font-style: initial;
+}
