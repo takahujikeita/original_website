@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .header-contents-list{
@@ -67,17 +71,6 @@
     align-items: flex-end;
 }
 
-/* スライダー */
-.splide__list {
-    display: flex;
-    margin-top: 3rem;
-  }
-  .splide__slide img {
-    width: 20rem;
-    margin-right: 3rem;
-    border-radius: 10%;
-  }
-
 /* section list-container */
 .list{
     display: flex;
@@ -89,7 +82,7 @@
     /* background-color:red; */
     width: 70%;
     /* height: 70rem; */
-    margin-top: 7rem;
+    margin-top: 2vw;
 }
 
 .aboutus-container-posse-text{
@@ -105,12 +98,17 @@
     margin-top: 1.5rem;
 }
 
+.list-container-title{
+    margin-top: 3vw;
+}
+
 .list-container-title-text{
     font-size: 40px;
     font-weight: bold;
     color: #0071bc;
     margin-left: 3rem;
     margin-top: 3rem;
+    text-decoration: none;
 }
 
 
@@ -137,7 +135,7 @@
     position: relative;
     padding: 20px 30px;
     margin-bottom: 25px;
-    background: #A2D6F9;
+    background: #E0EEF7;
     width: 100%; /* 親要素の幅に合わせる */
     height: 20rem;
     box-sizing: border-box; /* paddingを含めて幅を調整 */
@@ -153,7 +151,7 @@
     transform: translateX(-50%); /* 左に50%移動して中央に配置 */
     border-left: 50vw solid transparent; /* 左右をビューポートの半分に設定 */
     border-right: 50vw solid transparent;
-    border-top: 90px solid #A2D6F9; /* 高さを80pxに設定 */
+    border-top: 90px solid #E0EEF7; /* 高さを80pxに設定 */
 }
 
 
@@ -168,11 +166,119 @@
 
 .list-container-contents{
     color: #858585;
-    font-size: 25px;
-    width: 60%;
+    
+    width: 61%;
     margin-top: 2rem;
     margin-left: 3rem;
     margin-bottom: 10rem;
     font-weight: bold;
     font-style: initial;
 }
+
+/* Config section */
+.config-container{
+    display: flex;
+    justify-content: center;
+}
+.config-container-contents{
+    width: 30%;
+    margin-right: 1.2rem;
+    background-color: #F3F3F3;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10%;
+}
+.config-container-contents-title{
+    background-color: #0071BC;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10%;
+    position: absolute;
+    top: -0.7rem;
+}
+
+.config-container-contents-text1{
+    color: #0071BC;
+    margin: 2rem;
+}
+
+.config-container-contents-text2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.config-container-contents-img{
+    margin-bottom: 1rem;
+}
+
+/* benefits section */
+.benefits-container{
+    background-color: #E0EEF7;
+    padding: 2rem;
+    margin: 8rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+}
+.benefits-container-title{
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+    
+}
+
+.benefits-container-title-inner-text{
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #0071bc;
+    margin-left: 1vw;
+}
+.benefits-container-contents{
+    margin-right: 1vw;
+    margin-top: 2rem;
+}
+
+.benefits-container-contents2{
+    margin: 1rem 0;
+    font-size: 0.8vw;
+}
+
+.benefits-container-contents3{
+    font-size: 0.8vw;
+}
+
+/* footer */
+.footer-container{
+    height: 10vh;
+    background-color: #0071BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* スライダー */
+#slider {
+    width: 100%; /* スライダー全体の幅を画面全体に設定 */
+    display: flex;
+    justify-content: space-between; /* 各画像の間に余白を設定 */
+    overflow: hidden; /* 画面に収まらない部分を非表示に */
+    padding: 8vw 0.2vw; /* 左右に2vwの余白を追加 */
+}
+
+#slider img {
+    width: 22vw; /* 画像の幅を20vwに設定 */
+    height: 15vw; /* 画像の高さを自動調整 */
+    flex-shrink: 0; /* 画像の縮小を防ぐ */
+    border-radius: 2rem;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+

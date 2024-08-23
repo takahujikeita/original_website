@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <title>オリジナルウェブサイト制作</title>
 </head>
 <body>
@@ -15,9 +17,9 @@
         </div>
         <div class="header-contents">
             <ul class="header-contents-ul" style="display: flex; align-items: center;">
-                <a href="" class="header-contents-list">About us</a>
-                <a href="" class="header-contents-list">Features</a>
-                <a href="" class="header-contents-list">Benefits</a>
+                <a href="#aboutus" class="header-contents-list">About us</a>
+                <a href="#features" class="header-contents-list">Features</a>
+                <a href="#benefits" class="header-contents-list">Benefits</a>
                 <div class="header-contents-container" style="display: flex; height: 60px;">
                     <div class="header-contents-container-inform" style="border-bottom-left-radius: 2rem;" >
                         <a href="" class="header-contents-boxlist" style="text-decoration: none; color: white;">Inform</a>
@@ -41,49 +43,33 @@
         <div class="title-container-hero">
             <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_1.jpg" alt="" class="title-container-heroimg">
         </div>
-        <div class="splide" aria-label="動き続けるループスライダー">
-            <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <!-- <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt="">
-                </li>
-                <li class="splide__slide">
-                <img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg" alt=""> -->
-                </li>
-            </ul>
-            </div>
+        <div id="slider">   
+            <div><img src="./assets/img/LINE_ALBUM_POSSE③の日常_240823_1.jpg"></div>
+            <div><img src="./assets/img/LINE_ALBUM_チーム開発予選・決勝_240824_4.jpg"></div>   
+            <div><img src="./assets/img//LINE_ALBUM_チーム開発予選・決勝_240824_1.jpg"></div>
+            <div><img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg"></div>
+            <div><img src="./assets/img//LINE_ALBUM_チーム開発予選・決勝_240824_3.jpg"></div>
+            <div><img src="./assets/img/LINE_ALBUM_POSSE③の日常（作業）_240824_2.jpg"></div>   
+            <div><img src="./assets/img/LINE_ALBUM_POSSE③の日常（作業）_240824_1.jpg"></div>
+            <div><img src="./assets/img/LINE_ALBUM_2024チーム開発キックオフ_240820_2.jpg"></div>
         </div>
     </section>
     <section  >
         <div class="list">
-            <div class="list-container" style="height: 150rem;">
+            <div class="list-container" style="height: 120rem;">
                 <div class="aboutus-container-posse">
                     <h1 class="aboutus-container-posse-text">POSSE</h1>
                 </div>
                 <div class="list-container-title">
-                    <h2 id=""  class="list-container-title-text">About us</h2>
+                    <a name="aboutus" class="list-container-title-text">About us</a>
                 </div>
                 <div class="list-container-subtitle">
                     <h2>POSSEとは</h2>
                 </div>
                 <div class="list-container-contents">
-                    <p>POSSEは、株式会社アンチパターンが運営する"大学生向けプログラミング学習コミュニティ"です。
-                        関東圏の大学生約130名が3つのグループに分かれ活動しています。</p>
+                    <p style="font-size: 20px;">POSSEは、株式会社アンチパターンが運営する"大学生向けプログラミング</p>
+                    <p style="font-size: 20px; margin-top: 1rem;">学習コミュニティ"です。関東圏の大学生約130名が3つのグループに分かれ</p>
+                    <p style="font-size: 20px; margin-top: 1rem">活動しています。</p>
                 </div>
                 <div class="list-container-title">
                     <h2 id=""  class="list-container-title-text">Configuration</h2>
@@ -91,7 +77,50 @@
                 <div class="list-container-subtitle">
                     <h2>POSSEの構成</h2>
                 </div>
-                <div class="list-container-title">
+                <div class="config-container" >
+                    <div class="config-container-contents">
+                        <div class="config-container-contents-title">
+                            <p>性別</p>
+                        </div>
+                        <div class="config-container-contents-text1">
+                            <h2>プログラミングだけど</h2>
+                        </div>
+                        <div class="config-container-contents-text2">
+                            <h1>女性が4割</h1>
+                        </div>
+                        <div class="config-container-contents-img">
+                            <img src="./assets/img/configuration_sex.png" alt="" style="width: 15rem;">
+                        </div>
+                    </div>
+                    <div class="config-container-contents">
+                        <div class="config-container-contents-title">
+                            <p>学部別</p>
+                        </div>
+                        <div class="config-container-contents-text1">
+                            <h2>プログラミングだけど</h2>
+                        </div>
+                        <div class="config-container-contents-text2">
+                            <h1>文系が多い</h1>
+                        </div>
+                        <div class="config-container-contents-img">
+                            <img src="./assets/img/configuration-bar-chart.svg" alt="" style="width: 15rem;">
+                        </div>
+                    </div>
+                    <div class="config-container-contents">
+                        <div class="config-container-contents-title">
+                            <p>大学別</p>
+                        </div>
+                        
+                        <div class="config-container-contents-text2" style="font-size: 1.5rem; margin-top: 2.5rem;">
+                            <h1>早稲田 慶應 明治<span>大多数</span></h1>
+                        </div>
+                        <div class="config-container-contents-img">
+                            <img src="./assets/img/configuration-donut-chart.svg" alt="" style="width: 7rem;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="list-container-title" style="margin-top: 15rem;">
                     <h2 id=""  class="list-container-title-text">Flow of Learning</h2>
                 </div>
                 <div class="list-container-subtitle">
@@ -110,9 +139,37 @@
     </section>
     <section>
         <div class="list">
-            <div class="list-container">
+            <div class="list-container" style="height: 80rem;">
                 <div class="list-container-title">
-                    <h2 class="list-container-title-text">Features</h2>
+                    <a href="" name="features" class="list-container-title-text">Features</a>
+                    
+                </div>
+                <div class="list-container-subtitle">
+                    <h2>POSSEの特徴</h2>
+                </div>
+                <div class="list-container-title" style="margin-top: 4rem;">
+                    <a class="list-container-title-text" >01.教えることは教わること</a>
+                </div>
+                <div class="list-container-contents">
+                    <p style="font-size: 20px;">POSSEでは、汎用性の高いプログラミング言語を独自のカリキュラムで週</p>
+                    <p style="font-size: 20px; margin-top: 1rem">10時間、同期や先輩後輩と共に学びます。「教えることは教わること」という</p>
+                    <p style="font-size: 20px; margin-top: 1rem">文化が根付き、先輩後輩間での教え合いが活発です。</p>
+                </div>
+                <div class="list-container-title">
+                    <a class="list-container-title-text">02.有給インターンシップ</a>
+                </div>
+                <div class="list-container-contents" >
+                    <p style="font-size: 20px;">外部企業との提携でハッカソンやチーム開発など実践的な機会を提供し、個</p>
+                    <p style="font-size: 20px; margin-top: 1rem;">人とチームでPDCAを回せる環境を整えています。メンバーは有給インター</p>
+                    <p style="font-size: 20px; margin-top: 1rem">ンシップで実践経験も積めます。</p>
+                </div>
+                <div class="list-container-title">
+                    <a class="list-container-title-text">03.自己理解を深める</a>
+                </div>
+                <div class="list-container-contents">
+                    <p style="font-size: 20px;">POSSEは『7つの習慣』を活動軸に、技術だけでなくチームとして動ける人</p>
+                    <p style="font-size: 20px; margin-top: 1rem;">材の育成を重視。毎週の振り返りや本音のフィードバックで自己理解を深め</p>
+                    <p style="font-size: 20px; margin-top: 1rem">る機会を提供しています。</p>
                 </div>
             </div>
         </div>
@@ -124,16 +181,102 @@
     </section>
     <section>
         <div class="list">
-            <div class="list-container">
+            <div class="list-container" style="height: 110rem;">
                 <div class="list-container-title">
-                    <h2 class="list-container-title-text">Benefits</h2>
+                    <a href="" name="benefits" class="list-container-title-text">Benefits</a>
+                    
                 </div>
+                <div class="list-container-subtitle">
+                    <h2>POSSEで活動するメリット</h2>
+                </div>
+                <div class="benefits-container">
+                    <div>
+                        <div class="benefits-container-title">
+                            <div class="benefits-container-img"><img src="./assets/img/icon-community-space.svg" alt=""></div>
+                            <div class="benefits-container-title-text"><p class="benefits-container-title-inner-text">コミュニティスペースが24時間利用可能</p></div>
+                        </div>
+                        <div class="benefits-container-contents">
+                            <p class="benefits-container-contents1" style="font-size: 1.1vw;">株式会社アンチパターンが運営するエンジニア向けコミュニティスペース「Harbors表参道」がPOSSE生は24時間利用可能です</p>
+                            <p class="benefits-container-contents2">※本来一ヶ月利用料55,000円（フリー無限プラン）がPOSSE会員であれば無料</p>
+                            <p class="benefits-container-contents3">※表参道駅から徒歩3分、24時間利用可能、Wi-Fi・充電完備</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-container-imgbox">
+                        <div style="display: flex;">
+                            <div>
+                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常_240823_1.jpg" alt="" style="width: 15vw; border-top-left-radius: 2rem;">
+                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常（作業）_240823_1.jpg" alt="" style="width: 15vw; border-bottom-left-radius: 2rem;">
+                                
+                            </div>
+                            <div>
+                                <img src="./assets/img/community-space-03.png" alt="" style="width: 15vw; border-top-right-radius: 2rem; border-bottom-right-radius: 2rem;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="benefits-container">
+                    <div>
+                        <div class="benefits-container-title">
+                            <div class="benefits-container-img"><img src="./assets/img/icon-job-hunting.svg" alt=""></div>
+                            <div class="benefits-container-title-text"><p class="benefits-container-title-inner-text">就活がPOSSEの活動で完結します</p></div>
+                        </div>
+                        <div class="benefits-container-contents">
+                            <p class="benefits-container-contents1" style="font-size: 1vw;">POSSEではメンバーの就職活動を応援する仕組みを設けております。
+                                POSSE内にて、就活対策イベント(就活講座や面接対策会など)POSSE生限定逆求人就活イベント(外部企業人事担当者との面談)を設けております。
+                                また、POSSE就活生1人につき2名のキャリアコンサルタントがメンバーと就活を並走します。</p>
+                            <p class="benefits-container-contents2">POSSEは創立4年目を迎えますが、その1期生と2期生の内定実績になります。POSSE卒業生は就職活動において、チームで動け、かつ実践的なIT知識のある“IT人材”として評価していただいております。卒業生のキャリアとして、アプリ開発者等の“ITエンジニア”はもちろん、コンサルタントや商社、IT系のセールスなど幅広い領域に進んでおります。</p>
+                            <p class="benefits-container-contents3"></p>
+                        </div>
+                    </div>
+                    <div class="benefits-container-imgbox">
+                        <div style="display: flex;">
+                            <div>
+                                <img src="./assets/img/posse_joblist.jpeg" alt="" style="width: 25vw;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="benefits-container">
+                    <div>
+                        <div class="benefits-container-title">
+                            <div class="benefits-container-img"><img src="./assets/img/icon-lecture.svg" alt=""></div>
+                            <div class="benefits-container-title-text"><p class="benefits-container-title-inner-text">月1回社会人による講演会の開催</p></div>
+                        </div>
+                        <div class="benefits-container-contents">
+                            <p class="benefits-container-contents1" style="font-size: 1vw; margin-right: 1vw;">POSSEでは月1回定例会にて、
+                                社会で活躍されている方にお越しいただきPOSSE生に向けて講演をしていただいております。
+                                大学生のうちに社会人の視点とキャリアについての理解を深められます。</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="benefits-container-imgbox">
+                        <div style="display: flex;">
+                            <div>
+                                <img src="./assets/img/career-map.svg" alt="" >
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
             </div>
         </div>
     </section>
     <footer>
+        <div class="footer-container">
+            <p>&copy;Anti-pattern inc.</p>
+        </div>
     </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    
 </body>
 </html>
