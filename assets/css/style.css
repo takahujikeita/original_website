@@ -7,7 +7,7 @@
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 
 .header-contents-list{
@@ -17,12 +17,28 @@
 
 }
 
+.header-contents-nav{
+    display: flex; 
+    align-items: center;
+}
+
+.header-contents-container{
+    display: flex; 
+    height: 60px;
+}
+
+.header__hamburger{
+    display: none;
+}
+
 .header-contents-container-inform{
     background-color: #0073bc;
     display: flex;
+    border-bottom-left-radius: 2rem;
 }
 .header-contents-container-line{
     background: #27C02D;
+    display: flex;
 }
 
 .header-contents-boxlist{
@@ -77,12 +93,23 @@
     justify-content: center;
 }
 
-.list-container{
+.list-container-section1{
     background-color: #FBFBFB;
-    /* background-color:red; */
     width: 70%;
-    /* height: 70rem; */
     margin-top: 2vw;
+    height: 120rem;
+}
+.list-container-section2{
+    background-color: #FBFBFB;
+    width: 70%;
+    margin-top: 2vw;
+    height: 80rem;
+}
+.list-container-section3{
+    background-color: #FBFBFB;
+    width: 70%;
+    margin-top: 2vw;
+    height: 110rem;
 }
 
 .aboutus-container-posse-text{
@@ -280,5 +307,280 @@
 
 .slick-slide {
     height: auto !important;
+}
+
+
+/* iPhone XR対応のレスポンシブスタイル */
+@media screen and (max-width: 414px) {
+    /* ヘッダーのスタイル */
+    .header {
+        height: 3vh;
+        padding: 10px 0;
+    }
+
+    .header-logo img {
+        width: 8rem;
+    }
+
+    .header-contents{
+        display: none;
+    }
+
+    .header-contents-ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .header-contents-list {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-contents-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-contents-boxlist {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ヘッダーのナビ部分 */
+.header-contents {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%); 
+    background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+    transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
+  }
+
+    .header__hamburger{
+        display: block;
+        background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+        border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+        z-index: 9999;
+        
+    }
+
+    .hamburger{
+        width: 48px;
+  height: 100%;
+    }
+    /* ハンバーガーメニューの線 */
+    .header__hamburger-span{
+        width: 100% !important;
+        height: 1px;
+        background-color: #000;
+        position: relative;
+        transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+        display: block;
+        }
+
+      .header__hamburger-span:nth-child(1) {
+        top: 0;
+      }
+
+      .header__hamburger-span:nth-child(2) {
+        margin: 8px 0;
+      }
+
+      .header__hamburger-span:nth-child(3) {
+        top: 0;
+      }
+
+      /* ハンバーガーメニュークリック後のスタイル */
+.header-contents.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
+
+    /* メインタイトルと画像のスタイル */
+    .title-container {
+        margin: 10vh 3vh;
+    }
+
+    .title-container-title {
+        margin-bottom: 2rem;
+    }
+
+    .title-container-subtitle h1 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .title-container-heroimg {
+        border-bottom-left-radius: 3rem;
+        border-top-left-radius: 3rem;
+        height: auto;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .title-container-hero {
+        align-items: center;
+    }
+
+    /* セクションのスタイル */
+    .aboutus-container-posse{
+        display: none;
+    }
+    .list-container-section1{
+        width: 90%;
+        margin-top: 5rem;
+        padding: 1rem;
+        height: 100rem !important;
+    }
+    .list-container-section2{
+        width: 90%;
+        margin-top: 5rem;
+        padding: 1rem;
+        height: 70rem !important;
+    }
+    .list-container-section3{
+        width: 90%;
+        margin-top: 5rem;
+        padding: 1rem;
+        height: 130rem !important;
+    }
+
+
+    .list-container-title{
+        margin-top: 2vh !important;
+    }
+
+    .list-container-title-text {
+        font-size: 1.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .list-container-subtitle {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .list-container-contents {
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .step{
+        height: 15vh;
+    }
+
+    /* Config section */
+    .config-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .config-container-contents {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .config-container-contents-img img {
+        width: 10rem;
+    }
+
+    /* benefits section */
+
+    .benefits-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .benefits-container-title-inner-text {
+        font-size: 1.2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .benefits-container-contents1{
+
+    }
+
+    .benefits-container-contents1 {
+        font-size: 1rem !important;
+        margin-bottom: 2rem;
+    }
+    .benefits-container-contents2 {
+        font-size: 0.7rem !important;
+        margin-bottom: 2rem;
+    }
+    .benefits-container-contents3 {
+        font-size: 0.7rem !important;
+        margin-bottom: 2rem;
+    }
+
+    .benefits-img1{
+        display: none;
+    }
+    .benefits-img3{
+        display: none;
+    }
+
+    .benefits-container-imgbox-outer{
+        display: flex;
+        justify-content: center;
+    }
+    .benefits-img2{
+        width: 100% !important;
+        border-radius: 2rem !important;
+    }
+
+    .benefits-img4{
+        width: 100% !important;
+        border-radius: 2rem !important;
+    }
+
+    .benefits-img5{
+        width: 100% !important;
+        border-radius: 2rem !important;
+    }
+    /* フッターのスタイル */
+    .footer-container {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    /* スライダーのスタイル */
+    #slider {
+        padding: 5vw 0.2vw;
+    }
+
+    #slider img {
+        width: 90%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .slick-slide {
+        height: auto !important;
+    }
 }
 
