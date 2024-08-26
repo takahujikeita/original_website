@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
@@ -15,21 +15,26 @@
         <div class="header-logo">
             <img src="./assets/img/posseLogotouka.png" alt="" style="width: 10rem; ">
         </div>
-        <div class="header-contents">
-            <ul class="header-contents-ul" style="display: flex; align-items: center;">
+        <nav class="header-contents nav" id="js-nav">
+            <ul class="header-contents-nav" >
                 <a href="#aboutus" class="header-contents-list">About us</a>
                 <a href="#features" class="header-contents-list">Features</a>
                 <a href="#benefits" class="header-contents-list">Benefits</a>
-                <div class="header-contents-container" style="display: flex; height: 60px;">
-                    <div class="header-contents-container-inform" style="border-bottom-left-radius: 2rem;" >
-                        <a href="" class="header-contents-boxlist" style="text-decoration: none; color: white;">Inform</a>
+                <div class="header-contents-container" >
+                    <div class="header-contents-container-inform">
+                        <a href="" class="header-contents-boxlist" >Inform</a>
                     </div>
-                    <div class="header-contents-container-line" style="display: flex;">
-                        <a href="" class="header-contents-boxlist" style="text-decoration: none; color: white;">LINE</a>
+                    <div class="header-contents-container-line" >
+                        <a href="" class="header-contents-boxlist" >LINE</a>
                     </div>
                 </div>
             </ul>
-        </div>
+        </nav>
+        <button class="header__hamburger hamburger active"  id="js-hamburger">
+            <span class="header__hamburger-span"></span>
+            <span class="header__hamburger-span"></span>
+            <span class="header__hamburger-span"></span>
+        </button>
     </header>
     <section class="title">
         <div class="title-container">
@@ -56,7 +61,7 @@
     </section>
     <section  >
         <div class="list">
-            <div class="list-container" style="height: 120rem;">
+            <div class="list-container-section1" style="height: 120rem;">
                 <div class="aboutus-container-posse">
                     <h1 class="aboutus-container-posse-text">POSSE</h1>
                 </div>
@@ -139,7 +144,7 @@
     </section>
     <section>
         <div class="list">
-            <div class="list-container" style="height: 80rem;">
+            <div class="list-container-section2" >
                 <div class="list-container-title">
                     <a href="" name="features" class="list-container-title-text">Features</a>
                     
@@ -181,7 +186,7 @@
     </section>
     <section>
         <div class="list">
-            <div class="list-container" style="height: 110rem;">
+            <div class="list-container-section3" >
                 <div class="list-container-title">
                     <a href="" name="benefits" class="list-container-title-text">Benefits</a>
                     
@@ -203,14 +208,14 @@
                     </div>
                     
                     <div class="benefits-container-imgbox">
-                        <div style="display: flex;">
-                            <div>
-                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常_240823_1.jpg" alt="" style="width: 15vw; border-top-left-radius: 2rem;">
-                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常（作業）_240823_1.jpg" alt="" style="width: 15vw; border-bottom-left-radius: 2rem;">
+                        <div style="display: flex;" class="benefits-container-imgbox-outer">
+                            <div class="benefits-container-imgbox-img1">
+                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常_240823_1.jpg" alt="" style="width: 15vw; border-top-left-radius: 2rem;" class="benefits-img1">
+                                <img src="./assets/img/LINE_ALBUM_POSSE③の日常（作業）_240823_1.jpg" alt="" style="width: 15vw; border-bottom-left-radius: 2rem;" class="benefits-img2">
                                 
                             </div>
-                            <div>
-                                <img src="./assets/img/community-space-03.png" alt="" style="width: 15vw; border-top-right-radius: 2rem; border-bottom-right-radius: 2rem;">
+                            <div class="benefits-container-imgbox-img2">
+                                <img src="./assets/img/community-space-03.png" alt="" style="width: 15vw; border-top-right-radius: 2rem; border-bottom-right-radius: 2rem;" class="benefits-img3">
                             </div>
                         </div>
                         
@@ -233,7 +238,7 @@
                     <div class="benefits-container-imgbox">
                         <div style="display: flex;">
                             <div>
-                                <img src="./assets/img/posse_joblist.jpeg" alt="" style="width: 25vw;">
+                                <img src="./assets/img/posse_joblist.jpeg" alt="" style="width: 25vw;" class="benefits-img4">
                             </div>
                         </div>
                         
@@ -258,7 +263,7 @@
                     <div class="benefits-container-imgbox">
                         <div style="display: flex;">
                             <div>
-                                <img src="./assets/img/career-map.svg" alt="" >
+                                <img src="./assets/img/career-map.svg" alt="" class="benefits-img5">
                             </div>
                         </div>
                         
