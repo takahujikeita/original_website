@@ -8,6 +8,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
+    background-color: #fbfbfbb3;
 }
 
 .header-contents-list{
@@ -26,6 +27,8 @@
     display: flex; 
     height: 60px;
 }
+
+
 
 .header__hamburger{
     display: none;
@@ -127,6 +130,7 @@
 
 .list-container-title{
     margin-top: 3vw;
+    
 }
 
 .list-container-title-text{
@@ -136,6 +140,7 @@
     margin-left: 3rem;
     margin-top: 3rem;
     text-decoration: none;
+    scroll-margin-top: 60px;
 }
 
 
